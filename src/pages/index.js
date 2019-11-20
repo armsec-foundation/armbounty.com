@@ -10,6 +10,9 @@ import samvel from '../assets/images/profile/samvel-martirosyan.png';
 import vaagn from '../assets/images/profile/vaagn-toukharian.png';
 import karen from '../assets/images/profile/karen-vardanyan.jpg';
 
+import serviceTitan from '../assets/images/logos/servicetitan.png';
+import grantThornton from '../assets/images/logos/grant-thornton.png';
+
 class Index extends React.Component {
   constructor(props) {
     super(props);
@@ -44,11 +47,54 @@ class Index extends React.Component {
                 </header>
                 <p>UATE-ն և ArmSec Հիմնադրամը հայտարարում են ՀՀ-ում գործող պետական էլ. կառավարման համակարգերի տեղեկատվական անվտանգության խոցելիությունների հայտնաբերման մրցույթների շարք:
                 </p>
+                <p>Երկրորդ մրցույթը կմեկնարկի անմիջապես ArmSec 2019 կոնֆերանսից հետո նեյեմբերի 23-ին ժամը 18:00 և կտևի 20 ժամ:
+                </p>
+                <p>Հաղթող թիմերի համար նախատեսված է մրցանակ: Մրցանակային ֆոնդը կազմում է 2000 ԱՄՆ դոլար: Կլինեն նաև այլ անակնկալ մրցանակներ:
+                </p>
+                <p>
+                  <a href="https://forms.gle/VQmmdNaRTjEAFiDW7"
+                    class="button special">
+                    Գրանցվել
+                  </a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="intro" className="main special">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Հովանավորներ</h2>
+                </header>
+                <a href="https://servicetitan.com">
+                  <span className="image">
+                    <img
+                      src={serviceTitan}
+                      alt="ServiceTitan" />
+                  </span>
+                </a>
+                <a href="https://www.grantthornton.am/">
+                  <span className="image">
+                    <img
+                      src={grantThornton}
+                      alt="Grant Thornton" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section id="second" className="main">
+            <div className="spotlight">
+              <div className="content">
+                <header className="major">
+                  <h2>Առաջին Հաքաթոնը</h2>
+                </header>
                 <p>
                 Ուրախ ենք հայտարարել, որ Հունիսի 29ին կայացավ առաջին հաքաթոնը, որի շրջանակներում հայ երիտասարդների՝ «Սպիտակ գլխարկով հաքերների» կատարած աշխատանքը թույլ տվեց գտնել Հայաստանում գործող պետական էլեկտրոնային կառավարման համակարգի թերությունները։
                 </p>
                 <p>
-                  <span className="image">
+                  <span className="image main">
                     <img src={bountyPhoto} alt=""/>
                   </span>
                 </p>
@@ -56,7 +102,7 @@ class Index extends React.Component {
             </div>
           </section>
 
-          <section id="first" className="main special">
+          <section id="second" className="main special">
             <header className="major">
               <h2>Կարծիքներ</h2>
             </header>

@@ -25,15 +25,6 @@
 			}
 		}
 
-		.image {
-			margin-left: 10%;
-
-			img {
-				display: block;
-				width: 80%;
-			}
-		}
-
 		@include breakpoint(medium) {
 			@include vendor('flex-direction', 'column-reverse');
 			text-align: center;
