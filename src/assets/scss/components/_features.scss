@@ -33,6 +33,16 @@
 			}
 		}
 
+		&.sponsors {
+			@include vendor('justify-content', 'right');
+			li {
+				width: 150px;
+				.gatsby-image-wrapper {
+					max-height: 100px;
+				}
+			}
+		}
+
 		@include breakpoint(medium) {
 			li {
 				width: calc(#{(100% / 2)} - #{_size(element-margin)});

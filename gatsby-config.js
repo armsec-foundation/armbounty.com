@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "ArmBounty - Bug Bounty: e-Gov",
-    author: "ArmSec",
-    description: "Bug Bounty: e-Gov"
+    title: "ArmBounty :: Bug Bounty Program",
+    author: "ArmSec Foundation",
+    description: "ArmBounty program helps governmental and private organizations to reduce the risk of security incidents by working with Armenia's best ethical hackers during bug bounty hackathons."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +19,30 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/`,
+        name: "markdown-pages",
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-images`,
+          `gatsby-remark-copy-linked-files`,
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-8895497-4`,
+      },
+    },
   ],
 }

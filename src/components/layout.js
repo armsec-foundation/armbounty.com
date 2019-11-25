@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/scss/main.scss'
 
-import Footer from './Footer'
+import Footer from './footer'
 
 class Template extends React.Component {
   constructor(props) {
