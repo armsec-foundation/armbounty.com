@@ -21,12 +21,12 @@ export default ({text, section}) => (
           <h2>{section.title}</h2>
         </header>
         <div dangerouslySetInnerHTML={{__html: text}} />
-        <p>
+        {section.photo && <p>
           <span className="image main">
             <Img fluid={section.photo.childImageSharp.fluid}
               alt={section.title} />
           </span>
-        </p>
+        </p>}
         {section.sponsors &&
           <p>
             Հովանավորներ՝

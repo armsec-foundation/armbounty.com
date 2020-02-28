@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import logo from './logo.svg';
 
 export default (props) => (
   <header id="header" className="alt">
-    <span className="logo">
+    <Link className="logo" to="/">
       <img src={logo} alt="" />
-    </span>
-    <h1 style={{fontFamily: 'Open Sans'}}>ArmBounty</h1>
+    </Link>
+    <h1 style={{fontFamily: 'Open Sans'}}>{props.title}</h1>
     <p></p>
   </header>
 )

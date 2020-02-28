@@ -1,13 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import {graphql, Link} from 'gatsby'
+import {graphql} from 'gatsby'
 
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Nav from '../components/nav'
 import Features from '../components/features'
 import Section from '../components/section'
-import Intro from '../components/intro'
 
 class Index extends React.Component {
   constructor(props) {
@@ -36,31 +35,19 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="ArmBounty.com :: Bug Bounty" />
-        <Header title="ArmBounty" />
+        <Helmet title="ArmBounty.com :: 2019 Bug Bounties" />
+        <Header title="ArmBounty | 2019" />
         <div id="main">
           <Nav links={[{
-            label: "Սկիզբ",
-            elem: "intro"
+            label: "ArmSec 2019",
+            elem: "armsec-2019"
           }, {
             label: "e-Gov",
-            elem: "2020-first-bounty"
+            elem: "first-bounty",
           }, {
             label: "Կարծիքներ",
             elem: "features"
-          }, {
-            label: "2019",
-            to: "/2019"
           }]} scrollspy={['intro', 'features']} />
-          <Intro intro={this.props.data.intro.edges}
-            nav={[
-              <a href="https://www.facebook.com/events/922080838190066/">
-                <img src="https://img.icons8.com/color/40/000000/facebook-new.png" />
-              </a>,
-              <a href="https://forms.gle/dPYUEHnpdgTgLawJ9" className="button special">
-                Գրանցվել
-              </a>
-            ]} />
           {this.renderSections(this.props.data.sections.edges)}
           <Features features={this.props.data.features.edges} />
         </div>
@@ -88,7 +75,7 @@ export const pageQuery = graphql`
     sections: allMarkdownRemark(
       sort: {order: DESC, fields: [frontmatter___date]}
       filter: {
-        fileAbsolutePath: {regex: "/sections\/2020/"}
+        fileAbsolutePath: {regex: "/sections\/2019/"}
       }
       limit: 10
     ) {
