@@ -82,6 +82,19 @@ export const pageQuery = graphql`
       edges {
         node {
           html
+          frontmatter {
+            sponsors {
+              name
+              url
+              logo {
+                childImageSharp {
+                  fluid(maxHeight: 200) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },

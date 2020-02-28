@@ -1,5 +1,9 @@
 ---
 title: Intro
+sponsors:
+  - logo: "./sections/2020/sponsors/workfront.png"
+    name: Workfront
+    url: https://www.workfront.com
 ---
 <br />
 <br />
