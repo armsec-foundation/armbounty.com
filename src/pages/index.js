@@ -52,7 +52,7 @@ class Index extends React.Component {
             label: "2019",
             to: "/2019"
           }]} scrollspy={['intro', 'features']} />
-  
+          <Intro intro={this.props.data.intro.edges}/>  
           {this.renderSections(this.props.data.sections.edges)}
           <Features features={this.props.data.features.edges} />
         </div>
