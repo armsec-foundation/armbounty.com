@@ -52,15 +52,7 @@ class Index extends React.Component {
             label: "2019",
             to: "/2019"
           }]} scrollspy={['intro', 'features']} />
-          <Intro intro={this.props.data.intro.edges}
-            nav={[
-              <a href="https://www.facebook.com/events/922080838190066/">
-                <img src="https://img.icons8.com/color/40/000000/facebook-new.png" />
-              </a>,
-              <a href="https://forms.gle/dPYUEHnpdgTgLawJ9" className="button special">
-                Գրանցվել
-              </a>
-            ]} />
+  
           {this.renderSections(this.props.data.sections.edges)}
           <Features features={this.props.data.features.edges} />
         </div>
