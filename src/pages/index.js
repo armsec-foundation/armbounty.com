@@ -43,11 +43,11 @@ class Index extends React.Component {
             label: "Սկիզբ",
             elem: "intro"
           }, {
-            label: "e-Gov",
-            elem: "2020-first-bounty"
-          }, {
             label: "Կարծիքներ",
             elem: "features"
+          }, {
+            label: "e-Gov-2020",
+            to: "/2020"
           }, {
             label: "2019",
             to: "/2019"
