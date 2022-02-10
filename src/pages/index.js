@@ -54,7 +54,7 @@ class Index extends React.Component {
           }]} scrollspy={['intro', 'features']} />
           <Intro intro={this.props.data.intro.edges}
                  nav={[
-                  <a href="https://forms.gle/z6rF3tADLV2pURbZA" className="button special">
+                  <a href="https://forms.gle/z6rF3tADLV2pURbZA" target="_blank" className="button special">
                     Գրանցվել
                   </a>
              ]} 
