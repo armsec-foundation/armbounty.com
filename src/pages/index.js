@@ -52,7 +52,13 @@ class Index extends React.Component {
             label: "2019",
             to: "/2019"
           }]} scrollspy={['intro', 'features']} />
-          <Intro intro={this.props.data.intro.edges}/>
+          <Intro intro={this.props.data.intro.edges}
+                 nav={[
+                  <a href="https://forms.gle/z6rF3tADLV2pURbZA" className="button special">
+                    Գրանցվել
+                  </a>
+             ]} 
+          />
           <Features features={this.props.data.features.edges} />
         </div>
       </Layout>
